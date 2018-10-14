@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Predicted Pre-owned Car Prices
-=======
-# Predict Pre-owned car prices
->>>>>>> 49a8331f2cd1b09bc16179505dd72fd8e1d41d6c
+
 ### Project Luther
 
 > #### Datasets
