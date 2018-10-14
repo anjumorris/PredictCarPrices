@@ -3,10 +3,9 @@
 ### Project Luther
 
 > #### Datasets
->
->        	1.  Web scrapping from www.carmax.com
->                    	1.  1700 + webscraped data points
->                    	2.  30+ parameters
+Web scrapping from www.carmax.com
+>  1.  1700 + webscraped data points
+>  2.  30+ parameters
 
 
 
