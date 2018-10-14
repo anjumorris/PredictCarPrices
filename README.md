@@ -42,73 +42,15 @@ Web scrapping from www.carmax.com
 >
 >    2. **page_scrap.ipynb**
 >
->       This notebook creates go to a car's individual page by generating the link "https://www.carmax.com/car/"+ str (stock_num). It goes to this page and scraps the key details such as miles, color and then clicks on "see all  specifications" which 
+>       This notebook creates go to a car's individual page by generating the link "https://www.carmax.com/car/"+ str (stock_num). It goes to this page and scraps the key details such as miles, color and then clicks on "see all  specifications" which takes us to a detailed description of the car.
 >
-> 2. 
+> 2. **data_cleaning** - notebooks for data_cleaning and encoding
 >
->    1. data_collection - contains notebooks for web scrapping 
->
->       1. grab_links.ipynb 
->
->          This notebook goes to the carmax website and grabs basic information on the cars from their banners. We typically have 50 banners per page after which it goes to the next button to keep pulling 50 banners at a time automatically. Most importantly it grabs the stockno (viz the unique identifier for a car).  Using this stockno we can generate links to the car's individual page. 
->
->       2. page_scrap.ipynb
->
->          This notebook creates go to a car's individual page by generating the link "https://www.carmax.com/car/"+ str (stock_num). It goes to this page and scraps the key details such as miles, color and then clicks on "see all  specifications" which 
->
->    2. data_cleaning
->
->       1. clean_data.ipynb
->
->          Notebook that cleans all my data and outputs to final_data.csv
->
->       2. encoding_data.ipynb
->
->          This notebook reads the final_data.csv and prepares model_data.csv which can be used to run models. The notebook encodes categorical features such as 
->
->          - brand - luxury or not 
->          - interior_color - black or not
->          - exterior_color - dark colors (black, brown ..), light colors (white, silver ..), prime colors (red, gold,blue ..
->          - engine_type (normal, turbo or alternate)
->
->    3. model
->
->       1. explore_correlations.ipynb
->
->          Explore  the data, look at correlations and try feature engineering
->
->       2. model_1_linear_regression.ipynb
->
->          Prepare multiple linear regression models and figure out which feature to remove / transform.
->
->       3. model_2_final.ipynb
->
->          1. 
->
->    4. data
->
->       1. final_data.csv
->       2. model_data.csv
->
->    5. docs - all documents pertaining to the project
->
->       1. Proposal.pages / Proposal.pdf
->
->          Initial proposal idea  
->
->       2. PREDICTING USED CAR PRICES.pdf
->
->          Presentation on the Project
->
->       3. Summary.pages / Summary.pdf
->
->          Final summary for the project
->
-> 3. 1. **clean_data.ipynb**
+>    1. clean_data.ipynb
 >
 >       Notebook that cleans all my data and outputs to final_data.csv
 >
->    2. **encoding_data.ipynb**
+>    2. encoding_data.ipynb
 >
 >       This notebook reads the final_data.csv and prepares model_data.csv which can be used to run models. The notebook encodes categorical features such as 
 >
@@ -117,65 +59,36 @@ Web scrapping from www.carmax.com
 >       - exterior_color - dark colors (black, brown ..), light colors (white, silver ..), prime colors (red, gold,blue ..
 >       - engine_type (normal, turbo or alternate)
 >
->    3. **data**
+> 3. **model**
 >
->       1. final_data.csv
->
->          cleaned data 
->
->       2. Model_data.csv
->
->          encoded data that is ready for modelling
->
->    4. **model**
->
->       1. **explore_correlations.ipynb**
->
->          Explore  the data, look at correlations and try feature engineering
->
->       2. **model_1_linear_regression.ipynb**
->
->          Prepare multiple linear regression models and figure out which feature to remove / transform.
->
->       3. **model_2_final.ipynb**
->
->          Lasso and Ridege crossvalidation, compare several models and select best model. Test the model.
->
->    5. **model**
->
->    6. explore_correlations.ipynb **
+>    1. **explore_correlations.ipynb**
 >
 >       Explore  the data, look at correlations and try feature engineering
 >
->    7. model_1_linear_regression.ipynb
+>    2. **model_1_linear_regression.ipynb**
 >
 >       Prepare multiple linear regression models and figure out which feature to remove / transform.
 >
->    8. model_2_final.ipynb
+>    3. **model_2_final.ipynb**
 >
->       1. datafinal_data.csvmodel_data.csv
+>       Lasso and Ridege crossvalidation, compare several models and select best model. Test the model.
 >
-> 4. 1. final_data.csv
+> 4. **data** - all csv files 
 >
->    2. model_data.csv
+>    1. final_data.csv - cleaned final data
+>    2. model_data.csv - data ready for modelling
 >
->    3. docs - all documents pertaining to the project
+> 5. **docs** - documents 
 >
->    4. Proposal.pages / Proposal.pdf
+>    1. Proposal - Proposal.pages / Proposal.pdf
+>    2. Presentation - PREDICTING USED CAR PRICES.pdf
+>    3. Summary - Summary.pages / Summary.pdf
 >
->       Initial proposal idea  
->
->    5. PREDICTING USED CAR PRICES.pdf
->
->       Presentation on the Project
->
->    6. Summary.pages / Summary.pdf
->
->       Final summary for the project
->
->
+
+
 
 > #### How to run ?
 >
-> 1. Run only the Module - "model" as the others are related to web scrapping and cleaning of the data. Their ouput is stored in the data files - final_data.csv and model_data.csv 
+> 1. Run only the Module - "model" as the other modules/notebooks are related to web scrapping and
+>     cleaning of the data. Their ouput is stored in the data files - final_data.csv and model_data.csv 
 
